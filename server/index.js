@@ -28,13 +28,13 @@ app.get("/v1/google-status", (req, res) => {
             "url": "https://www.google.com",
             "statusCode": 200,
             "duration": 150,
-            "date": 1606636800
+            "date": new Date().getTime()
         },
         {
             "url": "https://www.amazon.com",
             "statusCode": 200,
             "duration": 273,
-            "date": 1606636803
+            "date": new Date().getTime()
         }
     ]);
   });
