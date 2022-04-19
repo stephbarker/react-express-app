@@ -9,7 +9,7 @@ export default function Home({ statusData }) {
             {statusData.map((item) => {
                 const { url, statusCode, duration, date } = item;
                 return (
-                    <article>
+                    <article style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                         <h3>{url}</h3>
                         <p>
                         {statusCode}
