@@ -14,10 +14,15 @@ function App() {
   const [amazonData, setAmazonData] = useState(null);
 
   //Fetch data from each endpoint
-    useEffect(() => {
-    fetch("/v1/all-status")
+  
+  useEffect(() => {
+    //Set Interval to refresh call every minute
+    const interval = setInterval(() => {
+      fetch("/v1/all-status")
       .then((res) => res.json())
       .then((statusData) => setStatusData(statusData));
+    }, 60000);
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
