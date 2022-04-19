@@ -11,7 +11,7 @@ app.get("/v1/google-status", (req, res) => {
     "url": "https://www.google.com",
     "statusCode": 200,
     "duration": 154,
-    "date": 1606636800 });
+    "date": new Date().getTime() });
   });
 
   app.get("/v1/amazon-status", (req, res) => {
@@ -19,7 +19,7 @@ app.get("/v1/google-status", (req, res) => {
     "url": "https://www.amazon.com",
     "statusCode": 200,
     "duration": 154,
-    "date": 1606636800 });
+    "date": new Date().getTime() });
   });
 
   app.get("/v1/all-status", (req, res) => {
