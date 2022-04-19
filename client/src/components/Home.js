@@ -12,11 +12,11 @@ export default function Home({ statusData }) {
                     <article style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                         <h3>{url}</h3>
                         <p>
-                        {statusCode}
+                        Status Code: {statusCode}
                          <br/>
-                         {duration}
+                         Request Duration: {duration}
                          <br/>
-                         {date}
+                         Time Stamp: {date}
                         </p>
                     </article>
                 );

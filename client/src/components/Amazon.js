@@ -5,13 +5,13 @@ export default function Amazon({ amazonData }) {
     <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
         <h1>Amazon Status</h1>
         <p>
-        {amazonData.url}
+        Website: {amazonData.url}
         <br/>
-        {amazonData.statusCode}
+        Status Code: {amazonData.statusCode}
         <br/>
-        {amazonData.duration}
+        Request Duration: {amazonData.duration}
         <br/>
-        {amazonData.date}
+        Time Stamp: {amazonData.date}
         </p>
     </div>
   )

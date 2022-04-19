@@ -5,13 +5,13 @@ export default function Google({ googleData }) {
     <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
         <h1>Google Status</h1>
         <p>
-        {googleData.url}
+        Website: {googleData.url}
         <br/>
-        {googleData.statusCode}
+        Status Code: {googleData.statusCode}
         <br/>
-        {googleData.duration}
+        Request Duration: {googleData.duration}
         <br/>
-        {googleData.date}
+        Time Stamp: {googleData.date}
         </p>
     </div>
   )
